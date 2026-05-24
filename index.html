@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>歌詞クイズ</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>歌詞クイズ</h1>
+
+    <p class="description">
+      ランダムに表示される歌詞フレーズから曲名を当てよう
+    </p>
+
+    <!-- 難易度 -->
+
+    <div class="settings-box">
+
+      <div class="setting-item">
+
+        <label for="difficultySelect">
+          難易度
+        </label>
+
+        <select id="difficultySelect">
+
+          <option value="EASY">
+            EASY
+          </option>
+
+          <option value="HARD">
+            HARD
+          </option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+    <!-- クイズ -->
+
+    <div class="quiz-box">
+
+      <p id="question-number">
+        Question 1
+      </p>
+
+      <p id="timer">
+        Time : 10
+      </p>
+
+      <p id="lyrics">
+        ここに歌詞が表示されます
+      </p>
+
+      <div id="choices-container">
+
+      </div>
+
+      <p id="result"></p>
+
+    </div>
+
+    <!-- スコア -->
+
+    <div class="score-box">
+
+      <p id="score">
+        Score : 0
+      </p>
+
+      <p id="combo">
+      Combo : 0
+      </p>
+
+      <p id="remaining">
+        Remaining : 0
+      </p>
+
+    </div>
+
+    <div class="score-box">
+
+      <p id="highScore">
+        High Score : 0
+      </p>
+
+      <p id="playCount">
+        Play Count : 0
+      </p>
+
+      <p id="combo">
+      Combo : 0
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="songs.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
